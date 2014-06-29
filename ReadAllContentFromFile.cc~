@@ -1,0 +1,26 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+long readAllContentFromFile(const char *fileName, char *buffer)
+{
+  filebuf *pbuf;
+  ifstream fileStrem;
+
+  long size;
+
+  fileStream.open(fileName,ios:binary);
+  pbuf=fileStream.rdbuf();
+
+  size=pbuf->pubseekoff(0,ios:end,ios:in);
+
+  pbuf->pubseekpos(0,ios:in);
+  buffer=new char[size];
+  pbuf->sgetn(buffer,size);
+
+  fileStream.close();
+
+  return size;
+  
+}

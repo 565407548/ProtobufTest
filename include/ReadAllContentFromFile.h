@@ -1,0 +1,5 @@
+/**
+ * @buffer save the content of the file
+ * @return the size of the file
+ */
+long readAllContentFromFile(const char *fileName,char * &buffer);
